@@ -3,7 +3,9 @@ import "../Contact/Contact.css";
 
 const Contact = () => {
   return (
-    <div className='contact-container'>Contact</div>
+    <div className='contact-container'>
+      <div className='contact-content'>Contact</div>
+    </div>
   )
 }
 

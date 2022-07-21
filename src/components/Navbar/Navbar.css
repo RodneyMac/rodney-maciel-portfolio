@@ -1,5 +1,7 @@
 .navbar-container {
+  width: 100%;
   background-color: var(--darkGray);
+  position: fixed;
 }
 
 .navbar-content {

@@ -1,3 +1,13 @@
 .footer-container {
-  text-align: center;
+  width: 100%;
+  background-color: var(--darkGray);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  color: var(--white);
+  font-size: 18px;
 }
