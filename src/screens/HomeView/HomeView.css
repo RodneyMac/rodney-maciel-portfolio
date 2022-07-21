@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* body {
+  background-color: var(--dark);
+} */
+
 .container {
   width: 100%;
   max-width: 1500px;
