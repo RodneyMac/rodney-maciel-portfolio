@@ -26,6 +26,10 @@ export const LogoContainer = styled.div `
   img {
     cursor: pointer;
   }
+
+  .link-logo {
+    text-decoration: none;
+  }
 `;
 
 export const Menu = styled.ul `
@@ -80,7 +84,6 @@ export const MenuItemLink = styled.div `
   transition: 0.5s all ease;
 
   &:hover {
-    color: var(--dark);
     background-color: var(--waterGreen);
     color: var(--dark);
     transition: 0.5s all ease;

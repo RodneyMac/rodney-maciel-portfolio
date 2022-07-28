@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import "../Navbar/Navbar.css";
 import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from './Navbar.elements';
 import {Link} from "react-router-dom";
 import logoImage from "../../assets/logo/rod.png";
@@ -15,7 +14,9 @@ const Navbar = () => {
       <Wrapper>
         <IconContext.Provider value={{style: {fontSize: "2em"}}}>
           <LogoContainer>
-            <img src={logoImage} alt='logo' width="40"/>
+            <Link to="/about" className='link-logo'>
+              <img src={logoImage} alt='logo' width="40"/>
+            </Link>
           </LogoContainer>
           <MobileIcon onClick={() => setShowMobile(!showMobile)}>
             {showMobile ? <FaTimes/> : <FaBars/>}
@@ -45,22 +46,6 @@ const Navbar = () => {
         </IconContext.Provider>
       </Wrapper>
     </Container>
-
-    // <div className='navbar-container'>
-    //   <div className='navbar-content' id="nav">
-    //     <div className='div-logo'>
-    //       <img src={logoImage} alt="Logo" className='logo'/>
-    //     </div>
-    //     <ul className="nav-links">
-    //       <Link to="/" className='link-router'><li className='nav-link'>About</li></Link>
-    //       <Link to="/skills" className='link-router'><li className='nav-link'>Skills</li></Link>
-    //       <Link to="/works" className='link-router'><li className='nav-link'>Works</li></Link>
-    //       <Link to="/contact" className='link-router'><li className='nav-link'>Contact</li></Link>
-    //     </ul>
-    //     <a href="#nav" className="nav-hamburger"><FaBars className="nav-icon"/></a>
-    //     <a href="#close-nav" className="nav-close"><FaTimes className="nav-icon"/></a>
-    //   </div>
-    // </div>
   )
 }
 
